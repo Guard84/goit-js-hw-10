@@ -27,7 +27,6 @@ const datePicker = flatpickr(input, {
           input.setAttribute("disabled", true);
         } else {
           button.removeAttribute("disabled");
-          input.setAttribute("disabled");
         }
       },
 });
