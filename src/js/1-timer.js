@@ -24,7 +24,6 @@ const datePicker = flatpickr(input, {
             position: "topRight"
           });
           button.setAttribute("disabled", true);
-          input.setAttribute("disabled", true);
         } else {
           button.removeAttribute("disabled");
         }
@@ -50,7 +49,7 @@ let timerInterval;
             clearInterval(timerInterval);
             updateTimer(0);
             button.removeAttribute("disabled");
-            input.setAttribute("disabled");
+            input.removeAttribute("disabled");
           } else {
             updateTimer(timeRemaining);
           }
